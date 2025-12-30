@@ -1,0 +1,30 @@
+web-technology-bca-lab/
+│
+├── lab-unit-1/
+│   ├── q1-layout/
+│   ├── q2-html-structure/
+│   ├── q3-navbar/
+│   ├── q4-list/
+│   ├── q5-nested-list/
+│   ├── q6-text-formatting/
+│   ├── q7-faculty-list/
+│   ├── q8-image-map/
+│   ├── q9-table/
+│   ├── q10-table-css/
+│   ├── q11-frameset/
+│   ├── q12-css-types/
+│   ├── q13-gallery/
+│   ├── q14-cv/
+│   ├── q15-menu/
+│   ├── q16-dropdown/
+│   ├── q17-responsive-menu/
+│   ├── q18-form/
+│   ├── q19-login-register/
+│   ├── q20-layout/
+│   ├── q21-loksewa-form/
+│   ├── q22-responsive-layout/
+│   ├── q23-gradesheet/
+│   ├── q24-image-overlay/
+│   ├── q25-card-layout/
+│   ├── q26-image-gallery/
+│   └── q27-invoice/
