@@ -1,0 +1,11 @@
+.l1-container { width: 100%; font-family: sans-serif; }
+
+.l1-header { background: #585b83; height: 60px; text-align: center; color: white; }
+.l1-menu { background: #7d8b7d; height: 30px; padding-left: 10px; }
+
+.l1-main { display: flex; height: 400px; }
+.l1-left { background: #a45a52; flex: 1; padding: 10px; }
+.l1-content { background: #4ba3f5; flex: 2; padding: 10px; }
+.l1-right { background: #7e7cf0; flex: 1; padding: 10px; }
+
+.l1-footer { background: #777; height: 40px; padding-left: 10px; }

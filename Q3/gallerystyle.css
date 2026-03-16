@@ -1,0 +1,35 @@
+.content{
+  height: 250px;
+  width: 250px;
+  
+  border: 2px solid black;
+  display: inline-block;
+}
+#navbar{
+  height: 60px;
+  background-color: #0f1111;
+}
+button{
+  background-color: #f08804;
+}
+#logo{
+  color: #f08804;
+  font-size: 25px ;
+}
+#content{
+  height: 700px;
+
+}
+a{
+  margin-right: 200px;
+  text-decoration: none;
+}
+footer{
+  color: white;
+  background-color: #0f1111;
+  text-align: center;
+  display: block;
+}
+span{
+  color: red;
+}

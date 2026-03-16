@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="invoice-wrapper">
+    <div class="top-bar"></div>
+
+    <header class="invoice-header">
+        <div class="company-brand">
+            <div class="logo-circle">LOGO</div>
+            <div class="company-details">
+                <h2>&lt;Your Company Name&gt;</h2>
+                <p>&lt;Your address&gt;</p>
+                <p>&lt;Your contact details&gt;</p>
+            </div>
+        </div>
+        <div class="invoice-meta">
+            <h1>INVOICE</h1>
+            <div class="meta-field"><strong>DATE</strong> <span></span></div>
+            <div class="meta-field"><strong>INVOICE NO.</strong> <span></span></div>
+        </div>
+    </header>
+
+    <div class="billing-info">
+        <div class="bill-to">
+            <h3>BILL TO</h3>
+            <p>&lt;Contact Name&gt;</p>
+            <p>&lt;Client Company Name&gt;</p>
+            <p>&lt;Address&gt;</p>
+            <p>&lt;Phone&gt;</p>
+            <p>&lt;Email&gt;</p>
+        </div>
+        <div class="ship-to">
+            <h3>SHIP TO</h3>
+            <p>&lt;Name / Dept&gt;</p>
+            <p>&lt;Client Company Name&gt;</p>
+            <p>&lt;Address&gt;</p>
+            <p>&lt;Phone&gt;</p>
+        </div>
+        <p class="payment-terms"><i>&lt;Payment terms (due on receipt, due in X days)&gt;</i></p>
+    </div>
+
+    <table class="invoice-table">
+        <thead>
+            <tr>
+                <th>DESCRIPTION</th>
+                <th>QTY</th>
+                <th>UNIT PRICE</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td></td><td></td><td></td><td>0.00</td></tr>
+            <tr><td></td><td></td><td></td><td>0.00</td></tr>
+            <tr><td></td><td></td><td></td><td>0.00</td></tr>
+            <tr><td></td><td></td><td></td><td>0.00</td></tr>
+        </tbody>
+    </table>
+
+    <div class="invoice-footer">
+        <div class="remarks">
+            <p>Remarks / Payment Instructions:</p>
+        </div>
+        <div class="totals">
+            <div class="total-row"><span>SUBTOTAL</span> <span>0.00</span></div>
+            <div class="total-row"><span>DISCOUNT</span> <span>0.00</span></div>
+            <div class="total-row"><span>SUBTOTAL LESS DISCOUNT</span> <span>0.00</span></div>
+            <div class="total-row"><span>TAX RATE</span> <span>0.00%</span></div>
+            <div class="total-row"><span>TOTAL TAX</span> <span>0.00</span></div>
+            <div class="total-row"><span>SHIPPING/HANDLING</span> <span>0.00</span></div>
+            <div class="balance-due">
+                <span>Balance Due</span>
+                <span>$ -</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-bar"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+h1{
+text-align: center;
+background-color: #8a7;
+color: #fff;
+}
+
+.contact{
+display: flex;
+justify-content: space-around;
+}
+
+.contact .email{
+color: #000;
+text-decoration: none;
+}
+.objective h3{
+background-color: #ccc;
+}
+
+.objective .details{
+display: flex;
+}
+
+.objective p{
+text-align: justify;
+}
+
+.academic h3{
+background-color: #ccc;
+}
+
+.academic table,tr,th,td{
+border: 1px solid #000;
+border-collapse: collapse;
+}
+
+.academic table{
+width: 100%;
+}

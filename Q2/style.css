@@ -1,0 +1,19 @@
+header{
+  background-color: #ddd;
+  display: block;
+  padding: 10px;
+}
+main{
+  background-color: aliceblue;
+  display: block;
+  padding: 10px;
+}
+footer{
+  background-color: beige;
+  display: block;
+  padding: 10px;
+}
+div{
+  background-color: blanchedalmond;
+  padding: 10px;
+}

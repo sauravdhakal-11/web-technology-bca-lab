@@ -1,0 +1,35 @@
+body { font-family: 'Helvetica', 'Arial', sans-serif; background: #f0f0f0; padding: 20px; }
+
+.invoice-wrapper { 
+    background: #fff; max-width: 800px; margin: auto; padding: 0 0 40px 0; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); position: relative;
+}
+
+.top-bar, .bottom-bar { background: #d97d54; height: 15px; width: 100%; }
+
+.invoice-header { display: flex; justify-content: space-between; padding: 40px; background: #f8f8f8; }
+
+.logo-circle { 
+    width: 80px; height: 80px; background: #777; border-radius: 50%; 
+    display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;
+}
+
+.invoice-meta h1 { color: #aaa; margin-top: 0; font-weight: normal; }
+.meta-field { border-bottom: 1px solid #ddd; margin-bottom: 5px; display: flex; justify-content: space-between; width: 150px; }
+
+.billing-info { display: grid; grid-template-columns: 1fr 1fr; padding: 20px 40px; gap: 20px; }
+.billing-info h3 { border-bottom: 2px solid #ddd; font-size: 14px; padding-bottom: 5px; }
+.payment-terms { grid-column: span 2; text-align: right; color: #777; font-size: 12px; }
+
+.invoice-table { width: 90%; margin: auto; border-collapse: collapse; }
+.invoice-table th { background: #d97d54; color: white; padding: 10px; font-size: 13px; }
+.invoice-table td { border: 1px solid #ddd; height: 30px; padding: 5px; text-align: right; }
+.invoice-table td:first-child { text-align: left; width: 50%; }
+
+.invoice-footer { display: flex; justify-content: space-between; padding: 20px 40px; }
+.totals { width: 250px; font-size: 12px; }
+.total-row { display: flex; justify-content: space-between; margin-bottom: 5px; border-bottom: 1px solid #eee; }
+.balance-due { 
+    background: #f2d7d5; display: flex; justify-content: space-between; 
+    padding: 10px; font-weight: bold; font-size: 16px; margin-top: 10px; 
+}

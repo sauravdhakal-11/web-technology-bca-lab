@@ -1,0 +1,86 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+h1{
+margin-top: 40px;
+text-align: center;
+padding:10px 0;
+background-image: linear-gradient(90deg,#908,#f09,#c09,#709);
+color: white;
+}
+form{
+width: 70%;
+margin: auto;
+margin-top: 20px;
+background-image: linear-gradient(90deg,rgb(0, 150, 153),rgb(74, 175, 180),rgb(61, 89, 154),rgb(133, 76, 149));
+}
+form fieldset{
+border: none;
+}
+form fieldset legend{
+text-align: center;
+padding-top: 15px;
+color: #fff;
+font-size: 20px;
+}
+.form-group{
+padding: 10px;
+border-bottom:1px solid white;
+}
+/* pseduo class */
+form fieldset div:hover{
+background-color: rgb(35, 94, 94);
+color: white;
+}
+.form-group label{
+display: inline-block;
+width: 100px;
+}
+
+.form-group input,select{
+border: none;
+width: 85%;
+height: 30px;
+border-radius: 5px;
+padding-left: 5px;
+}
+/* attribute selector */
+.form-group input[type="radio"]{
+border: none;
+width: 25px;
+height: 15px;
+border-radius: 5px;
+padding-left: 5px;
+}
+
+.form-group input[type="checkbox"]{
+border: none;
+width: 25px;
+height: 15px;
+border-radius: 5px;
+padding-left: 5px;
+}
+
+/* attribute, descendant,group */
+.form-group button[type='submit'],button[type='reset']{
+padding: 10px;
+border: none;
+border-radius: 5px;
+}
+/* pseudo class */
+.form-group button[type='submit']:hover{
+background-color: rgb(18, 66, 10);
+color: #fff;
+}
+
+.form-group button[type='reset']:hover{
+background-color: rgb(139, 11, 11);
+color: #fff;
+}
+/* pseduo element */
+.form-group label.req::after{
+content: "*";
+color: red;
+}

@@ -1,0 +1,18 @@
+.tufaculties{
+  border: 2px solid grey;
+  display: inline-block;
+  padding-right: 250px;
+}
+.program1{
+  text-decoration: overline;
+}
+.program2{
+  line-height: 50px;
+  text-decoration: line-through;
+  color: orange;
+}
+.program3{
+  color: pink;
+  text-decoration: underline;
+  
+}

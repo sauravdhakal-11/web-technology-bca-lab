@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration / Login Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main-container">
+    <h1 class="page-title">REGISTRATION / LOGIN FORM</h1>
+
+    <div class="forms-wrapper">
+        <section class="form-box register-box">
+            <h2 class="form-title">Register Form :</h2>
+            
+            <input type="text" placeholder="Username" class="input-field">
+            <input type="email" placeholder="Email" class="input-field">
+            <p class="input-help-text">Please enter a valid email address</p>
+            
+            <input type="password" placeholder="Password" class="input-field">
+            <p class="input-help-text">Minimum of 6 characters</p>
+            
+            <input type="password" placeholder="Confirm password" class="input-field">
+
+            <div class="row-group">
+                <label><input type="radio" name="gender" class="radio-input"> Female</label>
+                <label><input type="radio" name="gender" class="radio-input"> Male</label>
+            </div>
+
+            <div class="terms-group">
+                <input type="checkbox" id="terms" class="check-input">
+                <label for="terms">I have read and accept terms of use.</label>
+            </div>
+
+            <button type="submit" class="submit-btn gold-btn">SUBMIT</button>
+        </section>
+
+        <section class="form-box login-box">
+            <h2 class="form-title">Login form :</h2>
+            
+            <input type="email" placeholder="Enter Your Email" class="input-field">
+            <input type="password" placeholder="Password" class="input-field">
+
+            <div class="remember-group">
+                <input type="checkbox" id="remember" class="check-input">
+                <label for="remember">Remember me</label>
+            </div>
+
+            <button type="submit" class="login-btn gold-btn">LOGIN</button>
+        </section>
+    </div>
+</div>
+
+</body>
+</html>

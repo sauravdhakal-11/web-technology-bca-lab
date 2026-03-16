@@ -1,0 +1,86 @@
+/* 1. GLOBAL STYLES & MOBILE (Default) */
+body {
+    font-family: Arial, sans-serif;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Stacks everything vertically for Mobile */
+    gap: 10px;
+}
+
+.box {
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #333;
+}
+
+/* Specific Colors from your image */
+.header { background-color: #f08080; } /* Reddish */
+.main   { background-color: #ffffff; min-height: 100px; }
+.left   { background-color: #f0e68c; } /* Yellowish */
+.right  { background-color: #d2f5a6; } /* Greenish */
+.footer { background-color: #87ceeb; } /* Blueish */
+
+
+/* 2. TABLET VIEW (Min-width: 600px) */
+@media (min-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal columns */
+    }
+
+    .header, .main, .footer {
+        grid-column: span 2; /* These take up both columns */
+    }
+    
+    /* Left and Right will naturally sit side-by-side in the 2 columns */
+}
+
+
+/* 3. DESKTOP VIEW (Min-width: 900px) */
+@media (min-width: 900px) {
+    .container {
+        grid-template-columns: 150px 1fr 150px; /* Left column, middle, right column */
+    }
+
+    .header, .footer {
+        grid-column: span 3; /* Top and bottom span the whole width */
+    }
+
+    .left {
+        grid-column: 1;
+        grid-row: 2; /* Moves Left to the side of Main */
+    }
+
+    .main {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .right {
+        grid-column: 3;
+        grid-row: 2; /* Moves Right to the other side of Main */
+    }
+}
+/* 1. Force the browser to recognize the full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Make the container fill that height */
+.container {
+    min-height: 100vh; /* vh = viewport height. 100vh = 100% of the screen */
+    display: flex;
+    flex-direction: column;
+}
+
+/* 3. Make the middle sections grow to fill empty space */
+.main, .left, .right {
+    /* This ensures the middle content pushes the footer to the bottom */
+    flex: 1; 
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lok Sewa Aayog - User Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="registration-container">
+    <div class="form-header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/Emblem_of_Nepal.svg" alt="Nepal Emblem">
+        <h2>लोक सेवा आयोग</h2>
+        <p>Public Service Commission</p>
+        <h3>User Registration Form</h3>
+    </div>
+
+    <form action="#">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <div class="form-grid">
+                <div class="field">
+                    <label>First Name (English) *</label>
+                    <input type="text" placeholder="e.g. RAM" required>
+                </div>
+                <div class="field">
+                    <label>Middle Name (English)</label>
+                    <input type="text">
+                </div>
+                <div class="field">
+                    <label>Last Name (English) *</label>
+                    <input type="text" placeholder="e.g. SHARMA" required>
+                </div>
+                <div class="field">
+                    <label>Date of Birth (B.S.) *</label>
+                    <input type="text" placeholder="YYYY-MM-DD" required>
+                </div>
+                <div class="field">
+                    <label>Gender *</label>
+                    <select required>
+                        <option value="">Select Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>Email ID *</label>
+                    <input type="email" placeholder="example@gmail.com" required>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Citizenship Details</legend>
+            <div class="form-grid">
+                <div class="field">
+                    <label>Citizenship Number *</label>
+                    <input type="text" required>
+                </div>
+                <div class="field">
+                    <label>Issue District *</label>
+                    <select required>
+                        <option value="">Select District</option>
+                        <option value="kathmandu">Kathmandu</option>
+                        <option value="lalitpur">Lalitpur</option>
+                        </select>
+                </div>
+                <div class="field">
+                    <label>Issue Date (B.S.) *</label>
+                    <input type="text" placeholder="YYYY-MM-DD" required>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Family Details</legend>
+            <div class="form-grid">
+                <div class="field">
+                    <label>Father's Name *</label>
+                    <input type="text" required>
+                </div>
+                <div class="field">
+                    <label>Mother's Name *</label>
+                    <input type="text" required>
+                </div>
+                <div class="field">
+                    <label>Grandfather's Name *</label>
+                    <input type="text" required>
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="form-footer">
+            <button type="reset" class="btn-reset">Clear Form</button>
+            <button type="submit" class="btn-submit">Register Now</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

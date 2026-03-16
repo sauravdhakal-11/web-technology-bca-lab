@@ -1,0 +1,37 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+#navbar{
+  height: 60px;
+  background-color: #0f1111;
+}
+button{
+  background-color: #f08804;
+}
+#logo{
+  color: #f08804;
+  font-size: 25px ;
+}
+p{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: large;
+}
+#content{
+  height: 700px;
+
+}
+a{
+  margin-right: 200px;
+  text-decoration: none;
+}
+footer{
+  color: white;
+  background-color: #0f1111;
+  text-align: center;
+}
+span{
+  color: red;
+}

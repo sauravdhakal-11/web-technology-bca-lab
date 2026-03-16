@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<h1>Registration Form</h1>
+<hr>
+<form action="" method="" enctype="" novalidate>
+<fieldset>
+<legend>User Personal Information</legend>
+<div class="form-group">
+<label for="name" class="req">Name</label>
+<input type="text" placeholder="Enter name"
+id="name" class="" />
+</div>
+<div class="form-group">
+<label for="address" class="req">Address</label>
+<input type="text" placeholder="Enter address"
+id="address" class="" />
+</div>
+<div class="form-group">
+<label for="phone">Phone</label>
+<input type="number" placeholder="Enter phone"
+id="phone" class="" />
+</div>
+<div class="form-group">
+<label for="email">Email</label>
+<input type="email" placeholder="Enter email"
+id="email" class="" />
+</div>
+<!-- value of name attribute must be
+same to pair radio button -->
+<div class="form-group">
+<label for="gender">Gender</label>
+<input type="radio" name="gender" value="male" /> Male
+<input type="radio" name="gender" value="female" /> Female
+</div>
+<div class="form-group">
+<!-- multiple attribute is use to
+select multiple options -->
+<label for="country">Country</label>
+<select name="country" id="country">
+<option value="">Select Country</option>
+<option value="977">Nepal</option>
+<option value="01">China</option>
+</select>
+</div>
+<div class="form-group">
+<label for="image">Image</label>
+<input type="file" id="image" class="" />
+</div>
+<div class="form-group">
+<input type="checkbox" name="term"> I accept term & condition
+</div>
+<div class="form-group">
+<button type="submit">Register</button>
+<button type="reset">Clear</button>
+</div>
+</fieldset>
+</form>
+</body>
+</html>
