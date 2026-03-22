@@ -17,7 +17,7 @@ body {
     border: 2px solid #333;
 }
 
-/* Specific Colors from your image */
+
 .header { background-color: #f08080; } /* Reddish */
 .main   { background-color: #ffffff; min-height: 100px; }
 .left   { background-color: #f0e68c; } /* Yellowish */

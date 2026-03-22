@@ -5,11 +5,11 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: 'Georgia', serif; /* A more "historical/anime" font feel */
+    font-family: 'Georgia', serif; 
 }
 
 .gallery-wrapper {
-    background-color: #d6d6d6; /* The signature grey background from your image */
+    background-color: #d6d6d6; 
     padding: 30px;
     border: 1px solid #999;
     box-shadow: 0 10px 40px rgba(0,0,0,0.2);
@@ -72,7 +72,7 @@ body {
 }
 
 .gallery-item:hover img {
-    transform: scale(1.2) rotate(2deg); /* Added a tiny rotation for flair */
+    transform: scale(1.2) rotate(2deg); /* a tiny rotation for flair */
 }
 
 /* RESPONSIVE: Stack columns for smaller screens */

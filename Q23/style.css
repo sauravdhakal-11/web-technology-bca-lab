@@ -72,7 +72,7 @@ thead {
     width: 200px;
 }
 
-/* Make it look good on mobile */
+
 @media (max-width: 600px) {
     .grade-container { padding: 15px; }
     .student-info { flex-direction: column; gap: 5px; }
