@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="booklist.xsl"?>
+<books>
+    <book>
+        <title>Web Programming</title>
+        <author>Chrisbates</author>
+        <publisher>Wiley</publisher>
+        <edition>3</edition>
+        <price>300</price>
+    </book>
+    <book>
+        <title>Internet world-wide-web</title>
+        <author>Ditel</author>
+        <publisher>Pearson</publisher>
+        <edition>3</edition>
+        <price>400</price>
+    </book>
+</books>

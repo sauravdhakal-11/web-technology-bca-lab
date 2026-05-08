@@ -1,0 +1,26 @@
+<playlist>
+    <song>
+        <name>Bohemian Rhapsody</name>
+        <singer>Queen</singer>
+        <composed_by>Freddie Mercury</composed_by>
+        <length>5:55</length>
+    </song>
+    <song>
+        <name>Blinding Lights</name>
+        <singer>The Weeknd</singer>
+        <composed_by>Max Martin</composed_by>
+        <length>3:20</length>
+    </song>
+    <song>
+        <name>Hotel California</name>
+        <singer>Eagles</singer>
+        <composed_by>Don Felder</composed_by>
+        <length>6:30</length>
+    </song>
+    <song>
+        <name>Imagine</name>
+        <singer>John Lennon</singer>
+        <composed_by>John Lennon</composed_by>
+        <length>3:03</length>
+    </song>
+</playlist>
