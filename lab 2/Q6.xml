@@ -1,0 +1,28 @@
+<university>
+    <school schoolID="S101">
+        <name>School of Computing</name>
+        <location>Building A, North Campus</location>
+        
+        <staff_collection>
+            <staff staffID="ST001">
+                <name>Dr. Jane Doe</name>
+                <title>Professor</title>
+                <category>academic</category>
+                <address>
+                    <street>123 Tech Lane</street>
+                    <suburb>Silicon Valley</suburb>
+                    <postcode>94025</postcode>
+                </address>
+            </staff>
+        </staff_collection>
+
+        <subjects>
+            <subject subjectCode="CS101">
+                <name>Data Structures</name>
+                <description>Introduction to algorithms</description>
+                <capacity>50</capacity>
+                <taughtBy staffRef="ST001" />
+            </subject>
+        </subjects>
+    </school>
+</university>

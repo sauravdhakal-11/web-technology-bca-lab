@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="courses.xsl"?>
+<syllabus>
+    <subject name="Algo">
+        <topic>Greedy Algo</topic>
+        <topic>Randomized Algo</topic>
+        <topic>Searching Algo</topic>
+    </subject>
+    <subject name="Data Structures">
+        <topic>Array</topic>
+        <topic>Stack</topic>
+        <topic>Queue</topic>
+    </subject>
+</syllabus>

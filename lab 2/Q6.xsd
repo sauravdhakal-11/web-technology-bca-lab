@@ -1,0 +1,86 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="university">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="school" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" type="xs:string"/>
+              <xs:element name="location" type="xs:string" maxOccurs="unbounded"/>
+              <xs:element name="staff_collection">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="staff" type="staffType" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="subjects">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="subject" type="subjectType" maxOccurs="unbounded"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="schoolID" type="xs:string" use="required"/>
+          </xs:complexType>
+          <xs:key name="staffKey">
+            <xs:selector xpath="staff_collection/staff"/>
+            <xs:field xpath="@staffID"/>
+          </xs:key>
+          <xs:keyref name="staffRef" refer="staffKey">
+            <xs:selector xpath="subjects/subject/taughtBy"/>
+            <xs:field xpath="@staffRef"/>
+          </xs:keyref>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="staffType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="title" type="xs:string" minOccurs="0"/>
+      <xs:element name="category">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:enumeration value="academic"/>
+            <xs:enumeration value="general"/>
+            <xs:enumeration value="technical"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="address" type="addressType" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute name="staffID" type="xs:string" use="required"/>
+  </xs:complexType>
+
+  <xs:complexType name="addressType">
+    <xs:sequence>
+      <xs:element name="street" type="xs:string"/>
+      <xs:element name="suburb" type="xs:string"/>
+      <xs:element name="postcode" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="subjectType">
+    <xs:sequence>
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="description" type="xs:string"/>
+      <xs:element name="capacity">
+        <xs:simpleType>
+          <xs:restriction base="xs:integer">
+            <xs:minInclusive value="6"/>
+            <xs:maxInclusive value="400"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="taughtBy" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:attribute name="staffRef" type="xs:string" use="required"/>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+    <xs:attribute name="subjectCode" type="xs:string" use="required"/>
+  </xs:complexType>
+</xs:schema>

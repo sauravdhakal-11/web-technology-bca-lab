@@ -4,14 +4,14 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     justify-content: center;
-    padding: 40px 20px;
+    padding: 20px 10px;
 }
 
 .registration-container {
     background: #fff;
-    max-width: 900px;
+    max-width: 1000px;
     width: 100%;
-    padding: 30px;
+    padding: 5px;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     border-top: 5px solid #da251d; /* Nepal Flag Red */
@@ -19,7 +19,7 @@ body {
 
 .form-header {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
 
 .form-header img {
@@ -28,7 +28,7 @@ body {
 
 .form-header h2 {
     color: #1b365d; /* Dark Blue */
-    margin: 10px 0 0 0;
+    margin: 5px 0 0 0;
 }
 
 .form-header p {
@@ -39,8 +39,8 @@ body {
 
 fieldset {
     border: 1px solid #ddd;
-    padding: 20px;
-    margin-bottom: 25px;
+    padding: 10px;
+    margin-bottom: 10px;
     border-radius: 5px;
 }
 

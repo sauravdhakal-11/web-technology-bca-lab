@@ -1,0 +1,8 @@
+oceans_list { display: block; font-family: serif; padding: 20px; }
+title { 
+    display: block; background-color: #b0c4de; font-size: 24px; 
+    font-weight: bold; padding: 5px; width: 200px; margin-bottom: 10px;
+}
+ocean { display: block; margin-bottom: 15px; }
+name { display: block; font-weight: bold; font-size: 18px; color: #333; }
+area, depth { display: block; font-size: 12px; margin-left: 5px; }
